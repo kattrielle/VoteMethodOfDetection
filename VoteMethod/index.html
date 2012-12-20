@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.min.css">
+
+
+    </head>
+    <body data-spy="scroll" data-target=".sidebar-left">
+       
+           
+                <div class="span12">
+                    <div class="row" id="overview">
+                        <h1>Метод голосования</h1>
+                        <p>Распознавание надёжности клиента в банке</p>
+                        <p>Даны опции клиента, нужно выдать ответ, дать кредит или нет</p>
+                        <ul>
+                            <li>Возраст клиента  должен быть не менее 21 года и не более 65 лет</li>
+                            <li>Зарплата – удовлетворяет условию, что после ежемесячной выплаты по кредиту,
+                                у клиента остается прожиточный минимум</li>
+                            <li>Недвижимость – существование у клиента недвижимости</li>
+                            <li>Кредитная история – наличие положительной кредитной истории</li>
+                            <li>Прописка – Пермский край</li>
+                            <li>Судимости – был ли клиент судим</li>
+                            <li>Стаж работы – от 6 месяцев</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="row">
+                        <form class="form form-horizontal">
+                            <fieldset>
+                                <legend>Проверить клиента</legend>
+
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button type="button" class="btn" id="allowonemistake" data-toggle="button">
+                                            Допускаем 1 ошибку
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">
+                                            Проверить клиента на платёжеспособность
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="row">
+                        <h2>Данные</h2>
+                        <table class="table table-condensed">
+
+                        </table>
+                    </div>
+
+
+                </div>
+            
+        
+
+        <div class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Проверка работоспособности</h3>
+            </div>
+            <div class="modal-body">
+                <p></p>
+                <span class="btn">
+                    <i class="icon-thumbs-up"></i>
+                    <span></span>
+                </span>
+                <span class="btn">
+                    <i class="icon-thumbs-down"></i>
+                    <span></span>
+                </span>
+            </div>
+        </div>
+
+
+        <script src="lib/jq/jquery-1.8.2.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <!--Data file-->
+        <script src="data.js"></script>
+
+        <!--Application script-->
+        <script src="application.js"></script>
+    </body>
+</html>
